@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Membre</title>
+</head>
+<body>
+<h2>Espace Membre</h2>
+<p>Cette section est ouverte à tous les membres et superviseurs.</p>
+<form th:action="@{/sign-out}" method="post">
+    <button type="submit">Se déconnecter</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Panneau Superviseur</title>
+</head>
+<body>
+<h2>Zone de Supervision</h2>
+<p>Cette page est strictement réservée aux comptes disposant du rôle SUPERVISOR.</p>
+<form th:action="@{/sign-out}" method="post">
+    <button type="submit">Se déconnecter</button>
+</form>
+</body>
+</html>

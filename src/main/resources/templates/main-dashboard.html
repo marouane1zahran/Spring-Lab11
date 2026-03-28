@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de bord</title>
+</head>
+<body>
+<h1>Bienvenue sur le portail</h1>
+<p>Authentification réussie. Veuillez choisir votre espace :</p>
+<ul>
+    <li><a th:href="@{/member/panel}">Accès Membre</a></li>
+    <li><a th:href="@{/sys-admin/panel}">Accès Superviseur</a></li>
+</ul>
+<form th:action="@{/sign-out}" method="post">
+    <button type="submit">Se déconnecter</button>
+</form>
+</body>
+</html>
